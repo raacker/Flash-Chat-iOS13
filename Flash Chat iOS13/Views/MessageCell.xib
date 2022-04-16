@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Flash_Chat_iOS13" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="429" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uSM-ac-Fi3" userLabel="MessageCellView">
+                        <rect key="frame" x="5" y="5" width="254.5" height="81"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqs-9B-Mm1" userLabel="LeftView">
+                                <rect key="frame" x="0.0" y="0.5" width="50" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="HHU-QZ-Sky">
+                                        <rect key="frame" x="7" y="5" width="36" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="rcH-Do-7DJ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="HHU-QZ-Sky" firstAttribute="centerX" secondItem="vqs-9B-Mm1" secondAttribute="centerX" id="2ra-jo-oiF"/>
+                                    <constraint firstAttribute="width" constant="50" id="4cq-Mm-Eb7"/>
+                                    <constraint firstItem="HHU-QZ-Sky" firstAttribute="top" secondItem="vqs-9B-Mm1" secondAttribute="top" constant="5" id="MNG-dn-lK1"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wFX-Ui-qyl" userLabel="MessageView">
+                                <rect key="frame" x="55" y="0.5" width="144.5" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haven Kim" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uW-H9-8xY" userLabel="Name Label">
+                                        <rect key="frame" x="5" y="0.0" width="134.5" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="oJg-7s-SZy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" name="MessageName"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l1p-PV-kNx">
+                                        <rect key="frame" x="5" y="19" width="134.5" height="61"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="argdsfasdfsadf" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Car-6B-i2J">
+                                                <rect key="frame" x="10" y="10" width="114.5" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="MessageBodyText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="MessageOther"/>
+                                        <constraints>
+                                            <constraint firstItem="Car-6B-i2J" firstAttribute="leading" secondItem="l1p-PV-kNx" secondAttribute="leading" constant="10" id="K7V-L2-c4c"/>
+                                            <constraint firstAttribute="bottom" secondItem="Car-6B-i2J" secondAttribute="bottom" constant="10" id="bHo-7x-OAp"/>
+                                            <constraint firstAttribute="trailing" secondItem="Car-6B-i2J" secondAttribute="trailing" constant="10" id="ee7-3y-0OR"/>
+                                            <constraint firstItem="Car-6B-i2J" firstAttribute="top" secondItem="l1p-PV-kNx" secondAttribute="top" constant="10" id="j8k-N5-3sz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4uW-H9-8xY" firstAttribute="leading" secondItem="wFX-Ui-qyl" secondAttribute="leading" constant="5" id="KtJ-c1-rV2"/>
+                                    <constraint firstItem="l1p-PV-kNx" firstAttribute="leading" secondItem="wFX-Ui-qyl" secondAttribute="leading" constant="5" id="pMZ-1s-F5I"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqt-Gi-Q1i" userLabel="RightView">
+                                <rect key="frame" x="204.5" y="0.5" width="50" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:43 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2n2-pG-wr8">
+                                        <rect key="frame" x="0.0" y="61" width="50" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="eAM-X7-t9J"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" name="MessageName"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="0TP-Mc-Rif"/>
+                                    <constraint firstAttribute="bottom" secondItem="2n2-pG-wr8" secondAttribute="bottom" constant="5" id="3dF-kQ-wdL"/>
+                                    <constraint firstItem="2n2-pG-wr8" firstAttribute="centerX" secondItem="cqt-Gi-Q1i" secondAttribute="centerX" id="JK1-yY-AEw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="cqt-Gi-Q1i" firstAttribute="bottom" secondItem="wFX-Ui-qyl" secondAttribute="bottom" id="MwR-I4-qJR"/>
+                            <constraint firstItem="cqt-Gi-Q1i" firstAttribute="top" secondItem="wFX-Ui-qyl" secondAttribute="top" id="Yoz-8G-ng2"/>
+                            <constraint firstItem="vqs-9B-Mm1" firstAttribute="bottom" secondItem="wFX-Ui-qyl" secondAttribute="bottom" id="as2-Pi-bpF"/>
+                            <constraint firstItem="vqs-9B-Mm1" firstAttribute="top" secondItem="wFX-Ui-qyl" secondAttribute="top" id="bkH-cL-lwj"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="uSM-ac-Fi3" secondAttribute="bottom" constant="5" id="BTc-4H-bsv"/>
+                    <constraint firstItem="uSM-ac-Fi3" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="trailing" constant="-50" id="GuK-8m-kpL"/>
+                    <constraint firstItem="uSM-ac-Fi3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="JPF-ZK-dwy"/>
+                    <constraint firstItem="uSM-ac-Fi3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="bpt-sr-mMh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatar" destination="HHU-QZ-Sky" id="FH5-E4-vXw"/>
+                <outlet property="leftView" destination="vqs-9B-Mm1" id="XmI-S2-lfT"/>
+                <outlet property="messageBubble" destination="l1p-PV-kNx" id="02w-s4-7Al"/>
+                <outlet property="messageLabel" destination="Car-6B-i2J" id="gZG-lh-Fge"/>
+                <outlet property="nameLabel" destination="4uW-H9-8xY" id="rfB-Wx-35s"/>
+                <outlet property="rightView" destination="cqt-Gi-Q1i" id="9bd-Oz-3Xq"/>
+                <outlet property="timestampLabel" destination="2n2-pG-wr8" id="3lS-yU-YkH"/>
+            </connections>
+            <point key="canvasLocation" x="6.5217391304347831" y="98.772321428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="MeAvatar" width="36" height="36"/>
+        <namedColor name="MessageBodyText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MessageName">
+            <color red="0.21960783" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MessageOther">
+            <color red="0.21960783" green="0.21960783" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
